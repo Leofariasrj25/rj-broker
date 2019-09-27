@@ -1,17 +1,6 @@
 <div class="item-lista">
     <h3>{{ imovel.name }}</h3>
     <img src="{{ imovel.thumb }}"><br>
-    <a [routerLink]="['imoveis/', imovel.name]">Rod. Presidente Dutra, Queimados - RJ</a>
+    <a [routerLink]="['imoveis/', imovel.name]">{{ imovel.address.address }}</a>
 </div>
 
-<!-- <div class="item-lista">
-        <h3>ENAAX Queimados</h3>
-        <img src="assets/img/thumbs/thumb_enaax-queimados"><br>
-        <a routerLink="imoveis/{{ imovel.name }}"></a>
-</div>
-
- <div class="item-lista">
-        <h3>{{ imovel.name }}</h3>
-         <img src="{{ imovel.thumb }}"><br>
-         <a routerLink="imoveis/{{ imovel.name }}">{{ imovel.address.address }}</a>
-</div> -->
