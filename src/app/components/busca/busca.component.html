@@ -1,0 +1,6 @@
+<div>
+    <form [formGroup]="search_form" (ngSubmit)="procuraImoveis(search_form.value)">
+        <input type="text" formControlName="location">
+        <input type="submit" value="buscar" class="cta">
+    </form>
+</div>

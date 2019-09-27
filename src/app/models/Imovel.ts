@@ -1,10 +1,13 @@
+import { Location } from 'src/app/models/Location';
+
 export class Imovel {
     name: string;
     modality: string;
     type: string;
     address: Location;
     description: string;
-    photos: string[];
+    photo: string;
+    thumb: string;
     map_link: string;
 
     constructor(name: string, modal: string, type: string, address: Location, desc: string) {
