@@ -1,0 +1,51 @@
+#imovel {
+    display: flex;
+    flex-direction: row; 
+}
+
+.nomeImovel {
+    text-align: center;
+}
+
+#enderecoImovel {
+    text-align: center;
+    font-style: italic;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#imovel-col-left {
+    flex: 65%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#imovel-col-right {
+    flex: 35%;
+}
+
+.imovelDesc {
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+
+#info-card {
+    padding: 3px 0px 3px 0px; 
+    border-left: 1px solid black;
+    margin-bottom: 5px;
+    background-color: #f4f4f4;
+    list-style: none;
+}
+
+.info-item-title {
+   float: left;
+    
+}
+
+.info-item-value {
+    float: right;
+    margin-right: 50px;
+    margin-left: 0px;
+    padding-left: 0px;
+}

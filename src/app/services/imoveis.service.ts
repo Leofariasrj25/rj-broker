@@ -66,7 +66,15 @@ export class ImoveisService {
     prologis_queimados.thumb = "assets/img/thumbs/thumb_prologis-queimados.jpg";
     enaax_queimados.thumb = "assets/img/thumbs/thumb_enaax-queimados.jpg";
     glp_pavuna.thumb = "assets/img/thumbs/thumb_glp-pavuna.jpg";
-  
+
+    let prologis_gmaps_url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0329515043613!2d-43.63656538502412!3d-22.72701658510346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9959fff7650bf3%3A0xdadc306103bb417b!2sPrologis%20Queimados!5e0!3m2!1spt-BR!2sbr!4v1569628229433!5m2!1spt-BR!2sbr"
+    let enaax_gmaps_url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.220308665183!2d-43.6181432!3d-22.7354853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb13a0732c1e58897!2sENAAX!5e0!3m2!1spt-BR!2sbr!4v1569633157682!5m2!1spt-BR!2sbr"
+    let glppavuna_gmaps_url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14710.6311845899!2d-43.3436894!3d-22.8151406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x688ae9ae98849fe8!2sGLP%20Pavuna!5e0!3m2!1spt-BR!2sbr!4v1569633320358!5m2!1spt-BR!2sbr"
+
+    prologis_queimados.map_link = prologis_gmaps_url;
+    enaax_queimados.map_link = enaax_gmaps_url;
+    glp_pavuna.map_link = glppavuna_gmaps_url;
+    
     this.lista_propiedades = [prologis_queimados, enaax_queimados, glp_pavuna];
   }
 

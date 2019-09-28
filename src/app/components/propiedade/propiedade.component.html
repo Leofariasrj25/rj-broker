@@ -1,15 +1,55 @@
-<div>
-   <h2>{{ imovel.name }} </h2>
+<h2 class="nomeImovel">{{ imovel.name }} </h2>
+<h6 id="enderecoImovel">{{ imovel.address.address}} </h6>
+
+<hr>
+
+<div id='imovel'>
     
-    <div>
-        <img [src]="imagem">
-
-        <iframe></iframe>
-    </div>
-
-    <div>
+    <div id="imovel-col-left" class="column">
         <p>
+            <img [src]="imovel.thumb">
+        </p>
+        <p class="imovelDesc">
             {{ imovel.description }}
         </p>
     </div>
+
+    <div id="imovel-col-right" class="column">
+            <h3>Info</h3>
+            <div id="info-card">
+                 <ul>
+                     <li>
+                         <div class="info-item-title">
+                            <span >Tipo</span>
+                        </div>
+                         
+                         <div class="info-item-value">
+                            <span>{{ imovel.modality }}</span>       
+                         </div>
+                    </li>
+                    <li>
+                            <div class="info-item-title">
+                               <span >Categoria</span>
+                           </div>
+                            
+                            <div class="info-item-value">
+                               <span>{{ imovel.type }}</span>       
+                            </div>
+                       </li>
+                       <li>
+                            <div class="info-item-title">
+                               <span class="info-item-title">Área Bruta</span>
+                           </div>
+                            
+                            <div class="info-item-value">
+                               <span>A definir</span>       
+                            </div>
+                       </li>
+                 </ul>  
+            </div>    
+
+            <iframe width="350" height="350" frameborder="0" style="border:0;" allowfullscreen="" [src]="imovel.map_link | safe">
+            </iframe>    
+    </div>
+    
 </div>
