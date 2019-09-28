@@ -13,6 +13,7 @@ import { PropiedadeComponent } from './components/propiedade/propiedade.componen
 import { ListaPropiedadesComponent } from './components/lista-propiedades/lista-propiedades.component';
 import { ItemListaPropiedadesComponent } from './components/item-lista-propiedades/item-lista-propiedades.component';
 import { TestCaseComponent } from './components/test-case/test-case.component';
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TestCaseComponent } from './components/test-case/test-case.component';
     ListaPropiedadesComponent,
     ItemListaPropiedadesComponent,
     TestCaseComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
