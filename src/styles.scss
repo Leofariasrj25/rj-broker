@@ -10,6 +10,14 @@ body, html {
 body {
     font-family: 'Montserrat';
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    height: 100%;
 }
 
 a {

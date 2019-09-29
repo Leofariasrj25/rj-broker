@@ -9,8 +9,7 @@
         <p>
             <img [src]="imovel.thumb">
         </p>
-        <p class="imovelDesc">
-            {{ imovel.description }}
+        <p class="imovelDesc" [innerHTML]="imovel.description | descFormatter">   
         </p>
     </div>
 
@@ -36,7 +35,7 @@
                                <span>{{ imovel.type }}</span>       
                             </div>
                        </li>
-                       <li>
+                       <!-- <li>
                             <div class="info-item-title">
                                <span class="info-item-title">Área Bruta</span>
                            </div>
@@ -44,7 +43,7 @@
                             <div class="info-item-value">
                                <span>A definir</span>       
                             </div>
-                       </li>
+                       </li> -->
                  </ul>  
             </div>    
 

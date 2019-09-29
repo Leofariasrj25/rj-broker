@@ -14,6 +14,8 @@ import { ListaPropiedadesComponent } from './components/lista-propiedades/lista-
 import { ItemListaPropiedadesComponent } from './components/item-lista-propiedades/item-lista-propiedades.component';
 import { TestCaseComponent } from './components/test-case/test-case.component';
 import { SafePipe } from './pipes/safe.pipe';
+import { DescFormatterPipe } from './pipes/desc-formatter.pipe';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { SafePipe } from './pipes/safe.pipe';
     ItemListaPropiedadesComponent,
     TestCaseComponent,
     SafePipe,
+    DescFormatterPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
