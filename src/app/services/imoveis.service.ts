@@ -41,6 +41,10 @@ export class ImoveisService {
 
     let enaax_queimados = new Imovel('ENAAX Queimados', 'Locação', 'Industrial', enaax_xy, enaax_desc);
   
+    let enaax_photos = ['enaax_queimados1.jpg', 'enaax_queimados2.jpg'];
+
+    enaax_queimados.photos = enaax_photos;
+
     let glp_xy = new Location('Rio de Janeiro', 'Baixada Fluminense', 'Rua Embaú, 2207 - Pavuna');
 
     let glp_desc = `Área de Terreno: 163.400,00 m²
@@ -57,6 +61,9 @@ export class ImoveisService {
     Pátio de manobras: Sim`
   
     let glp_pavuna = new Imovel('GLP Pavuna', 'Locação', 'Industrial', glp_xy, glp_desc);
+
+    let glp_photos = ['glp_pavuna1.jpg', 'glp_pavuna2.jpg'];
+    glp_pavuna.photos = glp_photos;
 
     // adição de mapas e afins
 
