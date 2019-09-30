@@ -16,6 +16,11 @@ import { TestCaseComponent } from './components/test-case/test-case.component';
 import { SafePipe } from './pipes/safe.pipe';
 import { DescFormatterPipe } from './pipes/desc-formatter.pipe';
 import { FooterComponent } from './components/footer/footer.component';
+import { ImgCarouselComponent } from './components/img-carousel/img-carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-bootstrap';
+import { ImoveisService } from './services/imoveis.service';
+
 
 @NgModule({
   declarations: [
@@ -32,14 +37,16 @@ import { FooterComponent } from './components/footer/footer.component';
     SafePipe,
     DescFormatterPipe,
     FooterComponent,
+    ImgCarouselComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    CarouselModule.forRoot()
   ],
-  providers: [],
+  providers: [ImoveisService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

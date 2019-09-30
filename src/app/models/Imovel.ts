@@ -6,7 +6,7 @@ export class Imovel {
     type: string;
     address: Location;
     description: string;
-    photo: string;
+    photos: string[];
     thumb: string;
     map_link: string;
 

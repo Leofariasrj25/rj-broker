@@ -6,9 +6,7 @@
 <div id='imovel'>
     
     <div id="imovel-col-left" class="column">
-        <p>
-            <img [src]="imovel.thumb">
-        </p>
+        <app-img-carousel [imovel_name] = "imovel.name"></app-img-carousel><br>
         <p class="imovelDesc" [innerHTML]="imovel.description | descFormatter">   
         </p>
     </div>

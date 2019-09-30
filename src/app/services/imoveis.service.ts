@@ -12,25 +12,22 @@ export class ImoveisService {
 
   constructor() { 
 
-    let prologis_xy = new Location('Rio de Janeiro', 
+    let canteiro_central_xy = new Location('Rio de Janeiro', 
                   'Baixada Fluminense', 'Av. Guandú, 1000 - Jardim Alvorada, Queimados');
   
-    let desc = `Área de Terreno: 468.944,00 m²
-    Área total construída: 162.022,00 m²
-    Pé-direito: 12,0 m
-    Resistência de piso: 5 ton/m²
-    Docas (quantidade): 268
-    Sistema de Sprinklers: Sim
-    Iluminação natural: Sim
-    Portaria Blindada: Sim
-    Sistema de segurança / CFTV: Sim
-    Espaçamento entre pilares (m): 22×22
-    Vagas de estacionamento – veículos leves: 16
-    Pátio de manobras: Sim`;  
+    let canteiro_central_desc = `Essa área é a mais nobre no canteiro central do Distrito industrial com  RGI e Zoneamento Especial para bons negócios e resultados. 
+    Quem entra e saí do Distrito passa na frente e quem passa também vê a área central.`;  
 
-    let prologis_queimados = new Imovel('Prologis Queimados',
-                                     'Locação', 'Industrial', prologis_xy, desc);
+    let canteiro_central_queimados = new Imovel('D.I. Queimados',
+                                     'Locação', 'Industrial', canteiro_central_xy, canteiro_central_desc);
     
+    let canteiro_photos = ['terreno_entrada_queimados1.jpg', 
+                          'terreno_entrada_queimados2.jpg', 
+                          'terreno_entrada_queimados3.jpg',
+                          'terreno_entrada_queimados4.jpg'];
+
+    canteiro_central_queimados.photos = canteiro_photos;
+
     let enaax_xy = new Location('Rio de Janeiro', 'Baixada Fluminense', 'Rua Quitembu - Parque Industrial, Queimados');
 
     let enaax_desc = `Área de Terreno: 64.309,80 m²
@@ -63,7 +60,7 @@ export class ImoveisService {
 
     // adição de mapas e afins
 
-    prologis_queimados.thumb = "assets/img/thumbs/thumb_prologis-queimados.jpg";
+    canteiro_central_queimados.thumb = "assets/img/thumbs/thumb_canteiro-di-queimados.jpg";
     enaax_queimados.thumb = "assets/img/thumbs/thumb_enaax-queimados.jpg";
     glp_pavuna.thumb = "assets/img/thumbs/thumb_glp-pavuna.jpg";
 
@@ -71,11 +68,11 @@ export class ImoveisService {
     let enaax_gmaps_url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.220308665183!2d-43.6181432!3d-22.7354853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb13a0732c1e58897!2sENAAX!5e0!3m2!1spt-BR!2sbr!4v1569633157682!5m2!1spt-BR!2sbr"
     let glppavuna_gmaps_url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14710.6311845899!2d-43.3436894!3d-22.8151406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x688ae9ae98849fe8!2sGLP%20Pavuna!5e0!3m2!1spt-BR!2sbr!4v1569633320358!5m2!1spt-BR!2sbr"
 
-    prologis_queimados.map_link = prologis_gmaps_url;
+    canteiro_central_queimados.map_link = prologis_gmaps_url;
     enaax_queimados.map_link = enaax_gmaps_url;
     glp_pavuna.map_link = glppavuna_gmaps_url;
     
-    this.lista_propiedades = [prologis_queimados, enaax_queimados, glp_pavuna];
+    this.lista_propiedades = [canteiro_central_queimados, enaax_queimados, glp_pavuna];
   }
 
   getImovel(nome: string): Imovel {
